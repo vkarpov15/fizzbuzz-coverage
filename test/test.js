@@ -2,9 +2,9 @@ var assert = require('assert');
 var fizzbuzz = require('../');
 
 describe('fizzbuzz', function() {
-  /*it('returns null when passed a non-number', function() {
+  it('returns null when passed a non-number', function() {
     assert.equal(fizzbuzz('abc'), null);
-  });*/
+  });
 
   it('returns fizzbuzz when divisible by 15', function() {
     assert.equal(fizzbuzz(45), 'fizzbuzz');
