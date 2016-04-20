@@ -2,16 +2,14 @@ module.exports = function(n) {
   if (typeof n !== 'number') {
     return null;
   }
+  var result = '';
 
-  if (n % 3 === 0 && n % 5 === 0) {
-    return 'fizzbuzz';
-  }
   if (n % 3 === 0) {
-    return 'fizz';
+    result += 'fizz';
   }
   if (n % 5 === 0) {
-    return 'buzz';
+    result += 'buzz';
   }
 
-  return '' + n;
+  return result.length ? result  : '' + n;
 };
