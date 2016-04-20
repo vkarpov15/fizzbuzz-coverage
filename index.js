@@ -3,6 +3,10 @@ module.exports = function(n) {
     return null;
   }
 
+  if (n === 1337) {
+    return 'lol';
+  }
+
   if (n % 3 === 0 && n % 5 === 0) {
     return 'fizzbuzz';
   }
